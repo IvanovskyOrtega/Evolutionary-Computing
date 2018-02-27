@@ -5,9 +5,14 @@ Email: ivanovskyortega@gmail.com
 """
 
 from matplotlib import cm
+from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
+import math
+
+# Descomentar esta linea si se usara Jupyter Notebook
+#%matplotlib inline
 
 # Esta funcion corresponde a la función de Ackley para n variables.
 def ackley(*X):
