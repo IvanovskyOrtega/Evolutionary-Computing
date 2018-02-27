@@ -10,6 +10,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import sys
 import math
+# Descomentar esta linea si se usará Jupyter Notebook
+# %matplotlib inline
 
 # Esta funcion corresponde a la  funcion de Rastigin para n variables
 def rastrigin(*X):
