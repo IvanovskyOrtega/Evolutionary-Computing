@@ -5,9 +5,11 @@ Email: ivanovskyortega@gmail.com
 """
 
 from matplotlib import cm
+from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
+import math
 
 # Esta funcion corresponde a la  funcion de Rastigin para n variables
 def rastrigin(*X):
