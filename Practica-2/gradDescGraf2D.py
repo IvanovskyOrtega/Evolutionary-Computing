@@ -1,5 +1,5 @@
 """
-DESCENSO DEL GRADIENTE EN DOS DIMENSIONES
+DESCENSO DEL GRADIENTE PARA 2 VARIABLES
 Creditos: Ortega Victoriano Ivan
 Email: ivanovskyortega@gmail.com
 """
