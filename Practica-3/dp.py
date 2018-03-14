@@ -54,7 +54,8 @@ def getSolutionKP(M,W):
 def solveCoinChange(d,N):
     
     coins = len(d)
-    inf = sys.maxint
+    #inf = sys.maxint # Python 2
+    inf = sys.maxsize # Python 3
     M = [[0 for _ in range(N+1)] for _ in range(coins+1)]
     
     # Llenamos la primer fila con valores muy grandes
