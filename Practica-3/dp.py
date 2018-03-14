@@ -134,5 +134,3 @@ if __name__ == "__main__":
     for s in solution:
         print(s,solution[s])
         
-    # Solve the 0-1 knapsack problem and the change making using dp
-        
