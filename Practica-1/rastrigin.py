@@ -15,7 +15,8 @@ import math
 
 # Esta funcion corresponde a la  funcion de Rastigin para n variables
 def rastrigin(*X):
-    return 10 + sum([(x**2 - 10 * np.cos(2 * math.pi * x)) for x in X])
+    dim = len(X)
+    return 10*dim + sum([(x**2 - 10 * np.cos(2 * math.pi * x)) for x in X])
 
 if __name__ == '__main__':
 
