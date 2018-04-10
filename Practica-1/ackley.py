@@ -16,9 +16,10 @@ import math
 
 # Esta funcion corresponde a la función de Ackley para n variables.
 def ackley(*X):
-    sum1 = np.sqrt(0.5*(sum([x**2 for x in X])))
-    cosine_term = sum([np.cos(2*np.pi*x) for x in X])
-    return -20*np.exp(-0.2*sum1)-np.exp(0.5*cosine_term)+np.e+20
+	dim = len(X)
+	sum1 = np.sqrt((1/dim)*sum([x**2 for x in X]))
+	cosine_term = sum([np.cos(2*np.pi*x) for x in X])
+	return -20*np.exp(-0.2*sum1)-np.exp((1/dim)*cosine_term)+np.e+20
 
 if __name__ == '__main__':
     # Creamos una figura
