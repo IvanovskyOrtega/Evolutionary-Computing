@@ -58,16 +58,6 @@ def f(chromosome):
     return total_value
 
 
-# This function gets the number of coins that
-# a chromosome is using.
-def get_number_of_coins(chromosome):
-    i = 0
-    number_of_coins = 0
-    for c in chromosome:
-        number_of_coins += c
-    return number_of_coins
-
-
 # This function gets the fitness of a chromosome
 # according to its value and its number of coins.
 def fitness_fucntion(chromosome):
@@ -77,7 +67,7 @@ def fitness_fucntion(chromosome):
     # Gamma is the penalty factor
     gamma = 0.01
 
-    number_of_coins = get_number_of_coins(chromosome)
+    number_of_coins = sum(chromosome)
     fitness = f(chromosome)
 
     if fitness <= N:
@@ -93,7 +83,7 @@ def fitness_fucntion(chromosome):
     				chromosome[i] -= 1
     				break
     		fitness = f(chromosome)
-    	number_of_coins = get_number_of_coins(chromosome)
+    	number_of_coins = sum(chromosome)
 
     	return fitness-number_of_coins*gamma
 
